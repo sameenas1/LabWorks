@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+	<title>Kerala News</title>
+</head>
+
+<body>
+
+	<header>
+		<a href="home.html"><img src="images/slider1.jpg" alt="slider" style="display: block; margin: auto;"></a><br>
+
+		<div style="text-align: center;">
+		    <ul type="circle" style="list-style: none; padding: 0; margin: 0;">
+
+		        <li style="display: inline-block; margin-right: 20px;">
+		            <a href="home.html" style="font-size: 20px; color: #d52728; text-decoration: none; font-weight: 600;">Home</a>
+		        </li>
+
+		        <li style="display: inline-block; margin-right: 20px;">
+		            <a href="about.html" style="font-size: 20px; color: #d52728; text-decoration: none; font-weight: 600;">About Us</a>
+		        </li>
+
+		        <li style="display: inline-block;">
+		            <a href="contact.html" style="font-size: 20px; color: #d52728; text-decoration: none; font-weight: 600;">Contact Us</a>
+		        </li>
+
+		    </ul>
+		</div>
+	</header>
+	<br><br>
+
+	<section>
+
+		<h1 style="text-align:center;"><u>Get In Touch</u></h1><br>
+
+		<form method="POST" action="" target="_blank" style="width: 50%; margin: 0 auto; border: 1px solid #000; padding: 20px; ">
+
+			<label for="name">Name:</label>
+  			<input type="text" id="name" name="name" value="" required><br><br>
+
+  			<label for="phone">Phone Number:</label>
+       		<input type="tel" id="phone" name="phone" maxlength="10" required><br><br>
+
+  			<label for="service">Type of Communication</label>
+  			<select id="service" name="service">
+  			<option value="select">Select</option>
+		    <option value="sales">Sales</option>
+		    <option value="service">Service</option>
+		    <option value="enquiry">Enquiry</option>
+		    <option value="ads">Advertisement</option>
+		    <option value="complaint">Complaint</option>
+		  </select><br><br>
+		
+			Comment: 
+	         <br />
+			  <textarea rows = "8" cols = "50" name = "description" placeholder="Enter Your Message"></textarea>
+
+				<br>
+	         	<input type = "submit" value = "Submit" />
+		</form>
+
+	</section>
+
+
+</body>
+</html>
