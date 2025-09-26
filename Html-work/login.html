@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <style>
+
+    body 
+    {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container 
+    {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+
+    .login-box 
+    {
+      width: 80%;
+      max-width: 645px;
+      margin: 190px auto 0;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+
+
+    .login-box h2 
+    {
+      margin-bottom: 20px;
+      color: #e9523f;
+    }
+
+    label 
+    {
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+
+    input[type="text"],
+    input[type="password"] 
+    {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .remember 
+    {
+      margin-bottom: 15px;
+    }
+
+    .remember label
+    {
+      font-weight: 500;
+    }
+
+    .btn 
+    {
+      width: 104%;
+      padding: 10px;
+      background-color: #e9523f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .btn:hover 
+    {
+      background-color: #dc2626;
+    }
+
+
+    @media only screen and (min-width: 990px) 
+    {
+        .left-side 
+        {
+          width: 50%;
+          height: 100vh;
+          display: inline-block;
+          background: linear-gradient(to bottom, #b5c7fd, #fbe0cf);
+          vertical-align: top;
+        }
+
+        .right-side 
+        {
+          width: 50%;
+          display: inline-block;
+        }
+     }
+
+
+   @media only screen and (max-width: 768px) 
+       {
+          .left-side 
+          {
+            display: none;
+          }
+
+          .right-side 
+          {
+            width: 100%;
+            height: 100vh;
+            line-height: 100vh; 
+          }
+
+          .login-box 
+          {
+            line-height: normal; 
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+          }
+
+          .container 
+          {
+              overflow: hidden;
+          }
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left-side"></div><!--
+  --><div class="right-side">
+      <div class="login-box">
+        <h2>Login Form</h2>
+        <form method="post" action="">
+          <label name="email">Email :</label>
+          <input type="text" id="email" name="email">
+
+          <label name="password">Password :</label>
+          <input type="password" id="password" name="password">
+
+          <div class="remember">
+            <label>
+              <input type="checkbox" id="remember" style="vertical-align: middle; margin-right: 5px;">
+              Remember Me
+            </label>
+          </div>
+
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
